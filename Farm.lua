@@ -11,6 +11,7 @@ MainSection:NewToggle("Xp and money", "Enables xp and money farm.", function(sta
 
 while wait() do
  if getgenv().xp == true then
+ wait(0.1)
 game:GetService("ReplicatedStorage").Remotes.HitLobbyTarget:FireServer()
     end
  end 
